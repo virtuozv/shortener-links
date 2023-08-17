@@ -1,6 +1,8 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import getListOfLinks from "./getListLinks";
+import { listReducer } from "./listLinksSlice";
 const rootReducer = combineReducers({
-  data: getListOfLinks,
+  data: listReducer,
+  // pages: getMyList,
+  // myDataList: getPageSettings,
 });
 export default rootReducer;

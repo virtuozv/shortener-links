@@ -1,13 +1,12 @@
 import "./App.css";
-import { DisplayShortUrls } from "./components/displayUrls";
+import { BoxList } from "./components/BoxList/BoxList";
+import { LayoutPage } from "./layout/layoutPage/LayoutPage";
 
 function App() {
   return (
-    <>
-      <div>WE are getting responses from</div>
-      <h1>GRAPHQL SERVER</h1>
-      <DisplayShortUrls />
-    </>
+    <LayoutPage>
+      <BoxList />
+    </LayoutPage>
   );
 }
 
